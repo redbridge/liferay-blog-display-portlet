@@ -14,6 +14,7 @@
     background: -o-linear-gradient(top, #DDD 0%, #444 100%);
     background: -ms-linear-gradient(top, #DDD 0%, #444 100%);
     background-image: url("../blog-corner.png");
+    background-size: 25%;
     background-repeat: no-repeat;
     background-position: bottom right;
     width: 100%;
