@@ -18,12 +18,12 @@
 }
 
 #news-content-box .aui-carousel-item {
-    background: #777;
-    background: linear-gradient(to bottom, #DDD 0%, #444 100%);
-    background: -moz-linear-gradient(top, #DDD 0%, #444 100%);
-    background: -webkit-linear-gradient(top, #DDD 0%, #444 100%);
-    background: -o-linear-gradient(top, #DDD 0%, #444 100%);
-    background: -ms-linear-gradient(top, #DDD 0%, #444 100%);
+    background: #DDD;
+    background: linear-gradient(to bottom, #EEE 0%, #888 100%);
+    background: -moz-linear-gradient(top, #EEE 0%, #888 100%);
+    background: -webkit-linear-gradient(top, #DDD 0%, #888 100%);
+    background: -o-linear-gradient(top, #EEE 0%, #888 100%);
+    background: -ms-linear-gradient(top, #EEE 0%, #888 100%);
     width: 100%;
     height: 190px;
 }
@@ -35,7 +35,7 @@
 #news-content-box .aui-carousel-item .news {
     padding: 20px 20px 10px;
     width: 70%;
-    color: white;
+    color: #222;
     font-size: 16px;
     font-weight: 300;
 }
@@ -43,12 +43,12 @@
 #news-content-box .aui-carousel-item .newsDate {
     padding: 0 20px 20px;
     width: 70%;
-    color: white;
+    color: #222;
     font-size: 12px;
     font-weight: 300;
     font-style: italic;
 }
 
 #news-content-box .aui-carousel-item .news a {
-    color: white;
+    color: #222;
 }
