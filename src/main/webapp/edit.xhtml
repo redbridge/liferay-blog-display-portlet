@@ -1,0 +1,15 @@
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:h="http://java.sun.com/jsf/html">
+    <h:form>
+        <h:messages/>
+        <h:panelGrid columns="2">
+            <h:outputLabel for="blog-count" value="Number of blog-entries"/>
+            <h:inputText id="blog-count" value="#{editController.count}">
+                <f:validateRequired/>
+                <f:validateLongRange minimum="2" maximum="20"/>
+            </h:inputText>
+        </h:panelGrid>
+        <h:commandButton action="#{editController.update}" value="Save"/>
+    </h:form>
+</f:view>

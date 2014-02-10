@@ -1,0 +1,42 @@
+#news-content-box {
+    width: 100%;
+    height: 190px;
+    box-shadow: 0 1px 4px #222;
+    -moz-box-shadow: 0 1px 4px #222;
+    -webkit-box-shadow: 0 1px 4px #222;
+}
+
+#news-content-box .aui-carousel-item {
+    background: #b72a20;
+    background: linear-gradient(to bottom, #b72a20 0%, #711000 100%);
+    background: -moz-linear-gradient(top, #b72a20 0%, #711000 100%);
+    background: -webkit-linear-gradient(top, #b72a20 0%, #711000 100%);
+    background: -o-linear-gradient(top, #b72a20 0%, #711000 100%);
+    background: -ms-linear-gradient(top, #b72a20 0%, #711000 100%);
+    background-image: url("../blog-corner.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    width: 100%;
+    height: 190px;
+}
+
+#news-content-box .aui-carousel-item .news {
+    padding: 20px 20px 10px;
+    width: 70%;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#news-content-box .aui-carousel-item .newsDate {
+    padding: 0 20px 20px;
+    width: 70%;
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+#news-content-box .aui-carousel-item .news a {
+    color: white;
+}
