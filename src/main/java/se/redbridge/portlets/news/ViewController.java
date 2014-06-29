@@ -29,6 +29,9 @@ public class ViewController {
                 if (b.isInactive() == false && b.isExpired() == false && b.isDenied() == false && b.isDraft() == false) {
                     Blog blog = new Blog();
                     String contentByLocale = b.getDescription();
+                    if (contentByLocale == null || contentByLocale.length() == 0) {
+                        contentByLocale = b.getTitle();
+                    }
 
                     if (contentByLocale.length() >= 150) {
                         contentByLocale = contentByLocale.substring(0, 150);

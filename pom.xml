@@ -86,7 +86,7 @@
     <repositories>
         <repository>
             <id>central</id>
-            <url>https://rbt-dev01.redbridge.se/artifactory/libs-release</url>
+            <url>https://dev.redbridge.se/artifactory/libs-release</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
@@ -96,7 +96,7 @@
         </repository>
         <repository>
             <id>snapshots</id>
-            <url>https://rbt-dev01.redbridge.se/artifactory/libs-snapshot</url>
+            <url>https://dev.redbridge.se/artifactory/libs-snapshot</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
@@ -109,7 +109,7 @@
     <pluginRepositories>
         <pluginRepository>
             <id>central</id>
-            <url>https://rbt-dev01.redbridge.se/artifactory/plugins-release</url>
+            <url>https://dev.redbridge.se/artifactory/plugins-release</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
@@ -119,7 +119,7 @@
         </pluginRepository>
         <pluginRepository>
             <id>snapshots</id>
-            <url>https://rbt-dev01.redbridge.se/artifactory/plugins-snapshot</url>
+            <url>https://dev.redbridge.se/artifactory/plugins-snapshot</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
