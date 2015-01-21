@@ -11,7 +11,7 @@
 
     <groupId>se.redbridge.corporate</groupId>
     <artifactId>blog-aggregator-portlet</artifactId>
-    <version>6.2.0.1</version>
+    <version>6.2.0.2</version>
     <packaging>war</packaging>
 
     <properties>
@@ -34,10 +34,10 @@
             <plugin>
                 <groupId>com.liferay.maven.plugins</groupId>
                 <artifactId>liferay-maven-plugin</artifactId>
-                <version>6.2.1</version>
+                <version>6.2.2</version>
                 <configuration>
-                    <liferayVersion>6.2.1</liferayVersion>
-                    <autoDeployDir>/Applications/Development/Servers/liferay-portal-6.1.1-ce-ga2/deploy</autoDeployDir>
+                    <liferayVersion>6.2.2</liferayVersion>
+                    <autoDeployDir>/Applications/Development/Servers/liferay-portal-6.2.2-ce-ga3/deploy</autoDeployDir>
                 </configuration>
             </plugin>
         </plugins>
@@ -78,7 +78,7 @@
         <dependency>
             <groupId>com.liferay.portal</groupId>
             <artifactId>portal-service</artifactId>
-            <version>6.2.1</version>
+            <version>6.2.2</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
