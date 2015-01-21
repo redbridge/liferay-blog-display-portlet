@@ -10,6 +10,7 @@ import com.liferay.portlet.blogs.service.BlogsEntryLocalServiceUtil;
 import com.liferay.portlet.journal.model.JournalStructure;
 import com.liferay.portlet.journal.service.JournalStructureLocalServiceUtil;
 
+import java.io.Serializable;
 import javax.annotation.PostConstruct;
 import javax.faces.FacesException;
 import javax.faces.application.FacesMessage;
@@ -24,7 +25,9 @@ import java.util.List;
 
 @ManagedBean
 @SessionScoped
-public class EditController {
+public class EditController implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     private int count;
 
     @PostConstruct

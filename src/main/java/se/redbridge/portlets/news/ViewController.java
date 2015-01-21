@@ -8,15 +8,20 @@ import com.liferay.faces.portal.context.LiferayFacesContext;
 import com.liferay.portal.kernel.exception.SystemException;
 import com.liferay.portlet.blogs.model.BlogsEntry;
 import com.liferay.portlet.blogs.service.BlogsEntryLocalServiceUtil;
-
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 import javax.faces.FacesException;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
-import java.util.*;
 
 @ManagedBean
 @SessionScoped
-public class ViewController {
+public class ViewController implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     public Collection<Blog> getNewsList() {
         final LiferayFacesContext ctx = LiferayFacesContext.getInstance();
         int count = ctx.getPortletPreferenceAsInt(Constants.KEY_BLOG_COUNT, 5);

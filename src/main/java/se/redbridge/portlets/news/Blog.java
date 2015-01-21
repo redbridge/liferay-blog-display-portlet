@@ -6,7 +6,7 @@ package se.redbridge.portlets.news;
 
 import java.util.Date;
 
-public class Blog implements Comparable<Blog>{
+public class Blog implements Comparable<Blog> {
     private String text;
     private Date createdAt;
     private String targetPath;
