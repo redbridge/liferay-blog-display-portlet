@@ -11,7 +11,7 @@
 
     <groupId>se.redbridge.corporate</groupId>
     <artifactId>blog-aggregator-portlet</artifactId>
-    <version>6.2.0.2</version>
+    <version>6.2.0.3</version>
     <packaging>war</packaging>
 
     <properties>
@@ -37,7 +37,7 @@
                 <version>6.2.2</version>
                 <configuration>
                     <liferayVersion>6.2.2</liferayVersion>
-                    <autoDeployDir>/Applications/Development/Servers/liferay-portal-6.2.2-ce-ga3/deploy</autoDeployDir>
+                    <autoDeployDir>/Users/daniel/Downloads/liferay-portal-6.2-ce-ga3/deploy</autoDeployDir>
                 </configuration>
             </plugin>
         </plugins>

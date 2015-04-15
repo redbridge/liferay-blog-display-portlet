@@ -5,7 +5,9 @@
 package se.redbridge.portlets.news;
 
 import com.liferay.faces.portal.context.LiferayFacesContext;
+import com.liferay.portal.kernel.exception.PortalException;
 import com.liferay.portal.kernel.exception.SystemException;
+import com.liferay.portal.service.UserLocalServiceUtil;
 import com.liferay.portlet.blogs.model.BlogsEntry;
 import com.liferay.portlet.blogs.service.BlogsEntryLocalServiceUtil;
 import java.io.Serializable;
@@ -45,11 +47,11 @@ public class ViewController implements Serializable {
 
                     blog.setText(contentByLocale);
                     blog.setCreatedAt(b.getDisplayDate());
-                    blog.setTargetPath("/web/" + b.getUserName() + "/blog/-/blogs/" + b.getUrlTitle());
+                    blog.setTargetPath("/web/" + UserLocalServiceUtil.getUserById(b.getUserId()).getScreenName() + "/blog/-/blogs/" + b.getUrlTitle());
                     blogList.add(blog);
                 }
             }
-        } catch (SystemException e) {
+        } catch (PortalException | SystemException e) {
             throw new FacesException("Could not load news!", e);
         }
 
